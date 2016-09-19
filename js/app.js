@@ -13,14 +13,12 @@ var getRepos = function(name){
 
 // the parameters we need to pass in our request to GitHub Jobs API
     
-    var request = {
-        q: name
-    };
+    var request = name;
 
     $.ajax(
     {
         url: "https://api.github.com/search/repositories",
-        data: request,
+        q: request,
         dataType: "jsonp",
         type: "GET"
     })
