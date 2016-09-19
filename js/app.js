@@ -14,7 +14,7 @@ var getRepos = function(name){
 // the parameters we need to pass in our request to GitHub Jobs API
     
     var request = {
-        q: name;
+        q: name
     }
 
     $.ajax(
