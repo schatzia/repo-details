@@ -45,6 +45,7 @@ var getRepos = function(name){
 };
 
 var showRepo = function(item){
+    console_log(item);
     var repoItem = $('.template .result-repo').clone();
     // console.log(item);
        
