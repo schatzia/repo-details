@@ -25,7 +25,7 @@ var getRepos = function(name){
         method: "GET"
     })
     .done(function(result){ //this waits for the ajax to return with a succesful promise object
-        console.log(result.length);
+        console.log(result);
         if(request.q){
             var searchResults = showSearchResults('Name: ' + request.q, result.length);
         }
@@ -45,7 +45,7 @@ var getRepos = function(name){
 };
 
 var showRepo = function(item){
-    console.log(item);
+    // console.log(item);
     var repoItem = $('.template .result-repo').clone();
     // console.log(item);
        
@@ -76,7 +76,6 @@ $(document).ready(function(){
         event.preventDefault();
         $('#results').html('');
         var name = $(this).find("input[name='search-term']").val();
-        console.log(name);
         getRepos(name);
     });
 });
