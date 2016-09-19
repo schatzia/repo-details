@@ -18,9 +18,9 @@ var getRepos = function(name){
     $.ajax(
     {
         url: "https://api.github.com/search/repositories",
-        q: request,
-        dataType: "jsonp",
-        type: "GET"
+        data: request,
+        dataType: "json",
+        method: "GET"
     })
     .done(function(result){ //this waits for the ajax to return with a succesful promise object
         console.log(result.length);
