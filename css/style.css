@@ -1,15 +1,13 @@
 html{
 	font-family: 'Roboto', Open Sans;
-	background-color: #cccccc;
+	/* background-color: #cccccc; */
 }
-input{
+/* input{
 	margin-right:20px;
 	height: 20px;
 	width: 180px;
-}
-input:focus{
-	outline: none;
-}
+} */
+
 label{
 	font-weight: bold;
 	font-size: 16px;
@@ -45,14 +43,17 @@ p{
 footer{
 	height: 30px;
 	width: 99%;
-	background-color: #e06665;
+	background-color: grey;
 	position: fixed;
 	bottom: 5px;
 	left: 8px;
 	margin: 0;
 	padding: 0;
 }
-.search{
+#submit{
+	margin-right: 20px;
+}
+/* .search{
 	background-color: #e06665;
 	margin: 0;
 	padding: 10px;
@@ -61,10 +62,12 @@ footer{
 .search-header, .results-header{
 	font-size: 28px;
 }
+
 .search-container{
 	margin-top: 100px;
 	text-align: center;
 }
+ 
 #submit{
 	width: 150px;
 	height: 30px;
@@ -91,9 +94,7 @@ footer{
 	width: 80%;
 	margin: 0;
 }
+*/
 .hidden {
 	display: none;
-}
-dl, dt, dd {
-	border: 1px solid red;
 }
