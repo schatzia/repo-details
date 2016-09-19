@@ -27,13 +27,13 @@ var getRepos = function(name){
     .done(function(result){ //this waits for the ajax to return with a succesful promise object
         console.log(result);
         if(request.q){
-            var searchResults = showSearchResults('Name: ' + request.q, result.length);
+            var searchResults = showSearchResults('Name: ' + request.q, result.items.length);
         }
         
 
         $('.search-results').html(searchResults);
 
-        $.each(result, function(i, item) {
+        $.each(result.items, function(i, item) {
             var repo = showRepo(item);
             $('#results').append(repo);
         });
