@@ -47,8 +47,7 @@ var getRepos = function(name){
 var showRepo = function(item){
     var repoItem = $('.template .result-repo').clone();
     // console.log(item);
-     open issues count
-    
+       
     var repoTitle = repoItem.find('.title');
     repoTitle.text(item.name);
     //console.log(jobTitle.val());
@@ -57,7 +56,7 @@ var showRepo = function(item){
     repoURL.attr('href', item.html_url);
     
     var repoDescription = repoItem.find('.description');
-    repoDescription.append(item.description.substr(0,300)+'...');
+    repoDescription.append(item.description);
 
     var forks = repoItem.find('.forks');
     forks.text(item.forks_count);
@@ -76,6 +75,7 @@ $(document).ready(function(){
         event.preventDefault();
         $('#results').html('');
         var name = $(this).find("input[name='search-term']").val();
+        console.log(name);
         getRepos(name);
     });
 });
