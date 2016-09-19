@@ -94,3 +94,6 @@ footer{
 .hidden {
 	display: none;
 }
+dl, dt, dd {
+	border: 1px solid red;
+}
