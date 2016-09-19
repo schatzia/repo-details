@@ -23,11 +23,11 @@ var getRepos = function(name){
         data: request,
         dataType: "jsonp",
         type: "GET",
-        // page: 2
+        page: 2
     })
     .done(function(result){ //this waits for the ajax to return with a succesful promise object
-        if(request.name){
-            var searchResults = showSearchResults('Name: ' + request.name, result.length);
+        if(request.q){
+            var searchResults = showSearchResults('Name: ' + request.q, result.length);
         }
         
 
