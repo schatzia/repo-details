@@ -25,6 +25,7 @@ var getRepos = function(name){
         type: "GET"
     })
     .done(function(result){ //this waits for the ajax to return with a succesful promise object
+        console.log(result.length);
         if(request.q){
             var searchResults = showSearchResults('Name: ' + request.q, result.length);
         }
