@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Find your dream job!</title>
+	<title>Github Repositories</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto|Open+Sans' rel='stylesheet' type='text/css'>
@@ -31,37 +31,51 @@
 				<div id="results"></div>
 			</div>
 			<div class="template hidden">
-				<dl class="result-repo">
-					<dt>Title: 	</dt>
-						<dd class="title"></dd>	
-					<dt>URL: 	</dt>
-						<dd class="url"><a href="" target="_blank"></a></dd>		
-					<dt>Description: </dt>
-						<dd class="description"></dd>
-					<dt>Forks count: </dt>
-						<dd class="forks"></dd>
-					<dt>Stargazers: </dt>
-						<dd class="stargazers"></dd>
-					<dt>Open Issues: </dt>
-						<dd class="open_issues"></dd>	
-				</dl>				
-					<dl class="result-issue">
-					<dt>Title: 	</dt>
-						<dd class="issue_title"></dd>	
-					<dt>URL: 	</dt>
-						<dd class="url"><a href="" target="_blank"></a></dd>		
-					<dt>Description: </dt>
-						<dd class="description"></dd>
-					<dt>Forks count: </dt>
-						<dd class="forks"></dd>
-					<dt>Stargazers: </dt>
-						<dd class="stargazers"></dd>
-					<dt>Open Issues: </dt>
-						<dd class="open_issues"></dd>	
-				</dl>				
-				<div class="error">
-				<p>Uh-oh! Something went wrong with your request. Here's what we know:</p>
+				<div class="result-repo col-md-12">
+					<div class="col-md-8">
+						<dl>
+							<dt>Title: 	</dt>
+								<dd class="title"></dd>	
+							<dt>URL: 	</dt>
+								<dd class="url"><a href="" target="_blank"></a></dd>		
+							<dt>Description: </dt>
+								<dd class="description"></dd>
+							<!-- <dt>Forks count: </dt>
+								<dd class="forks"></dd>
+							<dt>Stargazers: </dt>
+								<dd class="stargazers"></dd>
+							<dt>Open Issues: </dt>
+								<dd class="open_issues"></dd>	-->
+						</dl>
+					</div>
+					<div class="col-md-4">
+						<ul>
+						<li class="stats"><span class="forks"></span>Forks</li>
+						<li class="stats"><span class="stargazers"></span>Stargazers</li>
+						<li class="stats"><span class="open_issues"></span>Open Issues</li>
+						<li class="stats"><span class="watchers"></span>Watchers</li>
+					</ul>
+					</div>
+					
 				</div>
+						<dl class="result-issue">
+						<dt>Title: 	</dt>
+							<dd class="issue_title"></dd>	
+						<dt>URL: 	</dt>
+							<dd class="url"><a href="" target="_blank"></a></dd>		
+						<dt>Description: </dt>
+							<dd class="description"></dd>
+						<dt>Forks count: </dt>
+							<dd class="forks"></dd>
+						<dt>Stargazers: </dt>
+							<dd class="stargazers"></dd>
+						<dt>Open Issues: </dt>
+							<dd class="open_issues"></dd>	
+					</dl>				
+				<div class="error">
+					<p>Uh-oh! Something went wrong with your request. Here's what we know:</p>
+				</div>
+				
 			</div>
 		</div>
 	</div>
